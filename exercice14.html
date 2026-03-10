@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14</title>
+</head>
+<body>
+    <header>
+        
+        <h1>commander votre PIZZA ici!</h1></header>
+    <main>
+        <fieldset>
+            <legend>
+                formulaire de commande:
+            </legend>
+            <fieldset>
+                <legend>informations client</legend>
+                <label for="nom">nom:</label>
+                <input type="text" id="nom" name="nom" maxlength="30" placeholder="name"required>
+                <br><br>
+                <label for="telephone">numero de telephone;</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="number" maxlength="15" minlength="7" required><br><br>
+                <label for="adresse">adresse:</label>
+                <input type="text" name="adresse" id="adresse" placeholder="adress"required>
+            </fieldset>
+            <br>
+            <label for="taille">taille de la pizza:</label>
+            <input type="radio" name="tp" id="s" >
+            <label for="s">S</label>
+            <input type="radio" name="tp" id="m">
+            <label for="m">M</label>
+            <input type="radio" name="tp" id="l">
+            <label for="l">L</label>
+            <input type="radio" name="tp" id="xl" checked>
+            <label for="xl">XL</label>
+            <br><br>
+            <select name="pate" id="pate"> 
+                <option value="fine" class="disabled">fine</option>
+                <option value="épaisse" class="disabled">épaisse</option>
+                <option value="sans gluten" class="disabled">sans gluten</option>
+
+            </select>
+            <br><br>
+            <fieldset>
+                <legend>suppléments</legend>
+                <input type="checkbox" name="poivrons" id="poivrons" >
+                <label for="poivrons">poivrons</label><br><br>
+                <input type="checkbox" name="jambon" id="jambon">
+                <label for="jambon">jambon</label><br><br>
+                <input type="checkbox" name="fromage" id="fromage"><label for="fromage">frommage</label><br><br>
+                <input type="checkbox" name="tomates" id="tomates"><label for="tomates">tomates</label><br><br>
+                <input type="checkbox" name="oignons" id="oignons"><label for="oignons">oignons</label><br><br>
+                <input type="checkbox" name="champignons" id="champignons"><label for="champignons">champignons</label><br><br>
+                <input type="checkbox" name="olives" id="olives"><label for="olives">olives</label><br><br><input type="checkbox" name="basilic" id="basilic"><label for="basilic">basilics</label><br><br>
+            </fieldset>
+            <br><br>
+            <label for="quantite">quantités</label>
+            <input type="number" min="1" max="10" name="quantite" id="quantite">
+            <br><br>
+            <label for="boisons">boisons:</label>
+            <select name="boisons" id="boisons" >
+                <option value="" class="disabled">aucun</option>
+                <option value="vimto" class="disabled">vimto</option>
+                <option value="orangina" class="disabled">orangina</option>
+                <option value="coca" class="disabled">coca</option>
+                <option value="djino" class="disabled">djino</option>
+                <option value="special" class="disabled">special</option>
+                <option value="fanta" class="disabled">fanta</option>
+                <option value="sprite" class="disabled">sprite</option>
+                <option value="sweepes"
+                class="disabled">sweepes</option>
+                <option value="eau" class="disabled">eau minéral</option>
+            </select>
+            <br><br>
+            <label for="ins">instruction special:</label>
+            <textarea name="ins" id="ins" placeholder="ecrire ici...">
+
+            </textarea>
+            <br><br>
+            <label for="">mode de livraison:</label>
+            <input type="radio" name="livraison" id="mode1">
+            <label for="mode1" checked="">livraison</label>
+            <input type="radio" name="livraison" id="mode2">
+            <label for="mode2" >retrait</label>
+            <br><br>
+            <label for="heure"></label>
+            <input type="time" name="heure" id="heure">
+        </fieldset>
+    </main>
+    <footer></footer>
+
+</body>
+</html>
