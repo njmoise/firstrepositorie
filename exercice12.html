@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12</title>
+</head>
+<body>
+   <header></header>
+   <main>
+    <form action="" class="card" >
+        
+        <fieldset>
+            <legend>infos personnelles</legend>
+            <label for="nom">nom:</label>
+            <input type="text"id="nom" name="nom" required maxlength="30" placeholder="name" class=" is-invalid">
+            <br><br>
+            <label for="prenom">prenom:</label>
+            <input type="text" id="prenom" name="prenom"maxlength="30" placeholder="" class="is-invalid">
+            <br><br>
+            <label for="email">adresse email:</label>
+            <input type="email" id="email" name="email" placeholder="nom@servicemessagerie.com"required>
+            <br><br>
+            <label for="password"> mot de passe:</label>
+            <input type="text" id="password" name="password" minlength="8" required placeholder="enter password" class="is-invalid">
+            <br><br>
+            <label for="birth">date de naissance:</label>
+            <input type="date" id="birth" name="birth" placeholder="birthday" required><br><br>
+            <label for="homme">homme</label>
+            <input type="radio" id="homme" name="genre" >
+            <label for="femme">femme</label>
+            <input type="radio" id="femme" name="genre" >
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+            <legend>ville</legend>
+            <select name="ville" id="ville">
+                <option value="">choisir une ville</option>
+                <option value="bangangté" class="disabled">bangangté</option>
+                <option value="yaoundé" class="disabled">yaoundé</option>
+                <option value="douala" class="disabled">douala</option>
+                <option value="buéa" class="disabled">buéa</option>
+                <option value="bamenda" class="disabled">bamenda</option>
+            </select>
+        </fieldset>
+        
+        <br>
+        <fieldset>
+            <legend>niveau d'étude</legend>
+            <select name="level" id="level">
+            <option value="aucun">aucun</option>
+            <option value="primaire">primaire</option>
+            <option value="secondaire">secondaire</option>
+            <option value="supérieur">supérieur</option>
+        </select>
+        </fieldset>
+        
+       
+        <input type="checkbox" id="conditions" name="conditions" >
+        <label for="conditions">conditions</label>
+        <br>
+        <input type="checkbox" id="news" name="news">
+        <label for="news">newsletter</label><br><br>
+        <button type="submit">soumettre</button><br><br>
+        <button type="reset" title="efface les données saisi">réinitialisé</button>
+    </form>
+   </main>
+   <footer></footer> 
+</body>
+</html>
